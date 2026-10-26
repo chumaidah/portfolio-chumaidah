@@ -6,10 +6,10 @@
     <title>Chumaidah Dwi Yoga Saputri | Computer Engineering Portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Plus Jakarta Sans -->
+    <!-- Google Fonts: Plus Jakarta Sans & Fraunces (Editorial Display Serif) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,600;1,9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -19,6 +19,7 @@
                 extend: {
                     fontFamily: {
                         sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        freight: ['"Freight Display Pro"', '"FreightDisplayPro"', '"Freight Big Pro"', '"Fraunces"', 'Georgia', 'serif'],
                     },
                     colors: {
                         brand: {
@@ -49,6 +50,15 @@
             background: linear-gradient(135deg, #EC4899 0%, #D97706 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+        .name-highlight {
+            font-family: 'Freight Display Pro', 'FreightDisplayPro', 'Freight Big Pro', 'Freight Text Pro', 'Freight Display', 'Fraunces', Georgia, serif;
+            font-weight: 700;
+            letter-spacing: -0.015em;
+            background: linear-gradient(135deg, #EC4899 0%, #FDE047 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         /* ── Hero Slideshow CSS Animation ── */
         @keyframes slide-fade-1 {
@@ -140,7 +150,7 @@
                     </div>
                     
                     <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight">
-                        <span class="text-slate-800">Hi, I'm </span><span style="background: linear-gradient(135deg, #EC4899 0%, #FDE047 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Chumaidah Dwi Yoga Saputri</span>
+                        <span class="text-slate-800">Hi, I'm </span><span class="name-highlight">Chumaidah Dwi Yoga Saputri</span>
                     </h1>
 
                     <p class="text-lg sm:text-xl font-medium text-slate-800 italic">
@@ -148,7 +158,7 @@
                     </p>
 
                     <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl">
-                        Lulusan Teknik Komputer dari Universitas Nahdlatul Ulama Yogyakarta (IPK 3,78/4,00). Memiliki keahlian terintegrasi dalam perancangan IoT (ESP32), UI/UX Design, serta manajemen proyek dan koordinasi event.
+                        Lulusan S1 Teknik Komputer dari Universitas Nahdlatul Ulama Yogyakarta. Memiliki kombinasi keahlian dalam perancangan antarmuka digital (UI/UX Design), pengembangan sistem IoT terintegrasi (perangkat keras & aplikasi web lokal), serta pengalaman solid dalam administrasi akademik dan koordinasi proyek.
                     </p>
 
                     <div class="pt-2 flex flex-wrap gap-4 justify-center md:justify-start">
@@ -213,16 +223,16 @@
                 <!-- Text Description -->
                 <div class="md:col-span-8 space-y-4 text-slate-600 leading-relaxed text-sm sm:text-base">
                     <p>
-                        Saya adalah lulusan <strong>S1 Teknik Komputer Universitas Nahdlatul Ulama Yogyakarta</strong> yang berdedikasi tinggi dan berorientasi pada hasil. Memiliki latar belakang akademis yang kuat di bidang teknologi hardware dan software, dikombinasikan dengan minat besar pada pengembangan bisnis serta komunikasi terstruktur.
+                        Saya lulusan <strong>S1 Teknik Komputer Universitas Nahdlatul Ulama Yogyakarta</strong> dengan <strong>IPK 3,78/4,00</strong>, memiliki ketertarikan pada teknologi, UI/UX, IoT, administrasi, serta pengelolaan proyek.
                     </p>
                     <p>
-                        Selama masa studi, saya berpengalaman langsung sebagai <strong>Asisten Program Studi & Tim Akreditasi</strong>, yang membentuk ketelitian saya dalam pengelolaan administrasi dan penyusunan dokumen strategis (LKPS & LED).
+                        Berpengalaman sebagai <strong>Asisten Program Studi, Tim Penyusun Akademik & Akreditasi</strong>, serta terlibat dalam berbagai proyek teknologi dan kegiatan berskala nasional sebagai <strong>Liaison Officer dan Volunteer</strong>. Terbiasa mengelola dokumen dan administrasi secara teliti, bekerja secara terstruktur, berkolaborasi lintas tim, serta menyelesaikan tugas dengan tanggung jawab dan kemampuan adaptasi yang baik.
                     </p>
                     <p>
-                        Selain itu, keterlibatan saya dalam berbagai acara skala nasional sebagai <em>Liaison Officer (LO)</em> dan <em>Volunteer Coordinator</em> memperkuat kemampuan manajemen waktu, penyelesaian masalah, serta kerja sama tim lintas disiplin.
+                        Memiliki pengalaman dalam <strong>UI/UX Design, pengembangan sistem IoT, riset teknologi, koordinasi kegiatan, dan pengelolaan administrasi akademik</strong>, serta memiliki semangat untuk terus belajar dan berkembang di lingkungan kerja profesional.
                     </p>
 
-                    <div class="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-slate-100">
+                    <div class="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-slate-100">
                         <div>
                             <span class="block text-xs text-slate-400 font-medium">Domisili</span>
                             <span class="font-semibold text-slate-700 text-sm">Sleman, Yogyakarta</span>
@@ -232,8 +242,12 @@
                             <span class="font-semibold text-slate-700 text-sm">S1 Teknik Komputer</span>
                         </div>
                         <div>
+                            <span class="block text-xs text-slate-400 font-medium">IPK</span>
+                            <span class="font-semibold text-pink-600 text-sm">3.78 / 4.00</span>
+                        </div>
+                        <div>
                             <span class="block text-xs text-slate-400 font-medium">Status</span>
-                            <span class="font-semibold text-slate-700 text-sm">Ready for Work</span>
+                            <span class="font-semibold text-emerald-600 text-sm">Siap Berkontribusi</span>
                         </div>
                     </div>
                 </div>
@@ -251,60 +265,86 @@
 
             <div class="relative border-l-2 border-pink-200 ml-4 md:ml-32 space-y-12">
                 
-                <!-- Item 1 -->
+                <!-- Item 1: Research Assistant -->
                 <div class="relative pl-6 md:pl-8">
                     <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-pink-500 border-4 border-white shadow"></div>
                     <div class="bg-white p-6 rounded-2xl border border-pink-100 shadow-sm hover:shadow-md transition">
-                        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-pink-100 text-pink-700 mb-2">Apr 2025 – Jan 2026</span>
-                        <h4 class="text-lg font-bold text-slate-800">UI/UX Designer & Researcher</h4>
-                        <p class="text-sm font-semibold text-pink-600 mb-3">Yayasan Pondok Pesantren Miftahussalam</p>
-                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
-                            <li>Merancang antarmuka (UI) & alur pengguna (UX) untuk sistem bel sekolah otomatis berbasis IoT dengan Figma.</li>
-                            <li>Menyusun wireframe & arsitektur informasi sistem pengumuman digital yang diimplementasikan pada proyek akhir.</li>
-                            <li>Menerjemahkan kebutuhan pengguna menjadi rancangan antarmuka yang intuitif dan fungsional.</li>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-pink-100 text-pink-700">Okt 2025 – Jan 2026</span>
+                            <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2.5 py-0.5 rounded-full">Riset Bersama Dosen</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-800">Research Assistant / Pengembang Sistem & Web</h4>
+                        <p class="text-sm font-semibold text-pink-600 mb-3">Ponpes Miftahussalam / Yayasan Pondok Pesantren Miftahussalam — Sleman, Yogyakarta</p>
+                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1.5">
+                            <li>Mengembangkan perangkat keras (hardware IoT) berbasis mikrokontroler ESP32 serta membangun platform aplikasi web lokal terintegrasi untuk otomasi bel sekolah dan sistem live audio streaming di Ponpes Miftahussalam.</li>
+                            <li>Merancang arsitektur sistem hardware-software, melakukan pengujian fungsi perangkat (hardware testing), serta menyelaraskan antarmuka web kontrol agar mudah dioperasikan secara lokal.</li>
+                            <li>Melakukan kolaborasi riset intensif bersama dosen pembimbing untuk menerjemahkan spesifikasi teknis menjadi prototipe fungsional yang siap diimplementasikan secara langsung.</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Item 2 -->
-                <div class="relative pl-6 md:pl-8">
-                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-yellow-400 border-4 border-white shadow"></div>
-                    <div class="bg-white p-6 rounded-2xl border border-yellow-100 shadow-sm hover:shadow-md transition">
-                        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-yellow-100 text-amber-800 mb-2">Jul 2023 – Jul 2025</span>
-                        <h4 class="text-lg font-bold text-slate-800">Asisten Program Studi & Tim Akreditasi</h4>
-                        <p class="text-sm font-semibold text-amber-600 mb-3">Prodi Teknik Komputer UNU Yogyakarta</p>
-                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
-                            <li>Mengelola administrasi akademik serta mengorganisasi berkas pendukung akreditasi prodi.</li>
-                            <li>Menjamin validitas, akurasi, dan kelengkapan data pada dokumen LKPS dan LED akreditasi.</li>
-                            <li>Mendukung efisiensi operasional harian prodi dan kebutuhan administrasi dosen.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Item 3 -->
+                <!-- Item 2: UI/UX Designer (Magang) -->
                 <div class="relative pl-6 md:pl-8">
                     <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-pink-400 border-4 border-white shadow"></div>
                     <div class="bg-white p-6 rounded-2xl border border-pink-100 shadow-sm hover:shadow-md transition">
-                        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-pink-100 text-pink-700 mb-2">Des 2022 – Jan 2024</span>
-                        <h4 class="text-lg font-bold text-slate-800">Sekretaris</h4>
-                        <p class="text-sm font-semibold text-pink-600 mb-3">HMP Teknik Komputer UNU Yogyakarta</p>
-                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
-                            <li>Mengelola administrasi kesekretariatan, persuratan, notulensi rapat, dan inventaris organisasi.</li>
-                            <li>Menyusun tata tertib internal dan mengoordinasikan komunikasi lintas pengurus.</li>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-pink-100 text-pink-700">Apr 2025 – Agu 2025</span>
+                            <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2.5 py-0.5 rounded-full">Magang</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-800">UI/UX Designer (Magang)</h4>
+                        <p class="text-sm font-semibold text-pink-600 mb-3">Yayasan Pondok Pesantren Miftahussalam — Sleman, Yogyakarta</p>
+                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1.5">
+                            <li>Merancang antarmuka pengguna (UI) dan alur pengalaman pengguna (UX) menggunakan Figma untuk sistem bel sekolah otomatis berbasis IoT, meningkatkan keterbacaan serta kemudahan navigasi sistem lokal bagi staf yayasan.</li>
+                            <li>Menyusun wireframe, arsitektur informasi, serta tata letak elemen visual dengan memperhatikan konsistensi sistem dan kemudahan navigasi pengguna.</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Item 4 -->
+                <!-- Item 3: Asisten Prodi & Tim Akreditasi -->
+                <div class="relative pl-6 md:pl-8">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-yellow-400 border-4 border-white shadow"></div>
+                    <div class="bg-white p-6 rounded-2xl border border-yellow-100 shadow-sm hover:shadow-md transition">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-yellow-100 text-amber-800">Jul 2023 – Jul 2025</span>
+                            <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2.5 py-0.5 rounded-full">Akademik & Akreditasi</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-800">Asisten Prodi Teknik Komputer & Tim Penyusun Akreditasi Prodi</h4>
+                        <p class="text-sm font-semibold text-amber-600 mb-3">Universitas Nahdlatul Ulama Yogyakarta — Sleman, Yogyakarta</p>
+                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1.5">
+                            <li>Mengelola administrasi akademik serta mengorganisasi dokumen kelengkapan bukti pendukung akreditasi program studi guna menjamin validitas, akurasi, serta kelengkapan data pada Laporan Kinerja Program Studi (LKPS) dan Laporan Evaluasi Diri (LED).</li>
+                            <li>Meningkatkan kelancaran operasional harian prodi dengan mendukung kebutuhan administrasi dosen, pengelolaan data, serta koordinasi antar-departemen secara efisien.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Item 4: GEDSI -->
                 <div class="relative pl-6 md:pl-8">
                     <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-amber-400 border-4 border-white shadow"></div>
                     <div class="bg-white p-6 rounded-2xl border border-yellow-100 shadow-sm hover:shadow-md transition">
-                        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-yellow-100 text-amber-800 mb-2">Des 2024 – Sekarang</span>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-yellow-100 text-amber-800">Des 2024 – Sekarang</span>
+                            <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2.5 py-0.5 rounded-full">Organisasi</span>
+                        </div>
                         <h4 class="text-lg font-bold text-slate-800">Sekretaris & Anggota Inklusi</h4>
                         <p class="text-sm font-semibold text-amber-600 mb-3">GEDSI UNU Yogyakarta</p>
-                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
-                            <li>Mendukung administrasi program kerja ramah disabilitas dan inklusif di kampus.</li>
-                            <li>Mempelajari dan memelopori dasar-dasar Bahasa Isyarat untuk komunikasi yang inklusif.</li>
+                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1.5">
+                            <li>Mendukung administrasi kegiatan inklusif serta memelopori penerapan dasar Bahasa Isyarat untuk memperkuat komunikasi ramah disabilitas.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Item 5: HMP Teknik Komputer -->
+                <div class="relative pl-6 md:pl-8">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-pink-300 border-4 border-white shadow"></div>
+                    <div class="bg-white p-6 rounded-2xl border border-pink-100 shadow-sm hover:shadow-md transition">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-pink-100 text-pink-700">Des 2022 – Jan 2024</span>
+                            <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2.5 py-0.5 rounded-full">Organisasi</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-800">Sekretaris</h4>
+                        <p class="text-sm font-semibold text-pink-600 mb-3">HMP Teknik Komputer</p>
+                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1.5">
+                            <li>Mengelola kesekretariatan organisasi, penyusunan surat-menyurat, notulensi rapat, serta tata tertib dan inventaris internal secara terstruktur.</li>
                         </ul>
                     </div>
                 </div>
@@ -321,24 +361,50 @@
                 <h3 class="text-2xl sm:text-3xl font-bold text-slate-800">Proyek Unggulan</h3>
             </div>
 
+            <!-- Education & Achievements Highlight -->
+            <div class="mb-10 bg-gradient-to-r from-pink-50 via-white to-yellow-50 p-6 sm:p-8 rounded-2xl border border-pink-100 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-pink-100 text-pink-700">Pendidikan & Prestasi</span>
+                        <span class="text-xs font-extrabold text-amber-700 bg-yellow-100 px-2.5 py-1 rounded-md">IPK 3.78 / 4.00</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-800">Universitas Nahdlatul Ulama Yogyakarta</h4>
+                    <p class="text-sm font-semibold text-slate-600">S1 Teknik Komputer | 2022 – 2026</p>
+                    <p class="text-sm text-slate-600 leading-relaxed max-w-2xl">
+                        <strong>Proyek Akhir / Skripsi (Nilai A - 81.95):</strong> Perancangan Sistem Bel Sekolah dengan Fitur Live Audio Berbasis IoT di Pondok Pesantren Miftahussalam Sleman.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row md:flex-col gap-2 shrink-0">
+                    <div class="px-4 py-2 rounded-xl bg-white border border-pink-100 text-center shadow-xs">
+                        <span class="block text-xs text-slate-400">Skripsi</span>
+                        <span class="text-base font-bold text-pink-600">Nilai A (81.95)</span>
+                    </div>
+                    <div class="px-4 py-2 rounded-xl bg-white border border-yellow-100 text-center shadow-xs">
+                        <span class="block text-xs text-slate-400">Predikat</span>
+                        <span class="text-base font-bold text-amber-600">Dengan Pujian</span>
+                    </div>
+                </div>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 
                 <!-- Project Card 1: Skripsi IoT -->
                 <div class="bg-white rounded-2xl overflow-hidden border border-pink-100 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                     <div class="p-6 sm:p-8">
                         <div class="flex items-center justify-between mb-4">
-                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-pink-100 text-pink-700">IoT & Microcontroller</span>
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-pink-100 text-pink-700">IoT & Web Engineering</span>
                             <span class="text-xs font-extrabold text-amber-600 bg-yellow-100 px-2.5 py-1 rounded-md">Nilai A (81.95)</span>
                         </div>
-                        <h4 class="text-xl font-bold text-slate-800 mb-3">Sistem Bel Sekolah Otomatis & Live Audio Streaming Berbasis IoT</h4>
+                        <h4 class="text-xl font-bold text-slate-800 mb-2">Perancangan Sistem Bel Sekolah dengan Fitur Live Audio Berbasis IoT</h4>
+                        <p class="text-xs font-semibold text-pink-600 mb-3">Pondok Pesantren Miftahussalam Sleman</p>
                         <p class="text-sm text-slate-600 leading-relaxed mb-6">
-                            Rancang bangun perangkat lunak dan keras menggunakan mikrokontroler ESP32, arsitektur Node.js, dan database SQLite untuk otomasi penjadwalan bel sekolah serta siaran audio langsung via web lokal di Ponpes Miftahussalam Sleman.
+                            Mencakup pengembangan sistem berbasis mikrokontroler ESP32 dan web lokal untuk mendukung pengaturan jadwal otomatis serta penyampaian pengumuman/siaran audio langsung secara real-time.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">ESP32</span>
                             <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Node.js</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Local Web Server</span>
                             <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">SQLite</span>
-                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Web Server Lokal</span>
                         </div>
                     </div>
                 </div>
@@ -348,16 +414,18 @@
                     <div class="p-6 sm:p-8">
                         <div class="flex items-center justify-between mb-4">
                             <span class="px-3 py-1 rounded-full text-xs font-bold bg-yellow-100 text-amber-800">UI/UX Design</span>
-                            <span class="text-xs font-medium text-slate-400">Magang Proyek</span>
+                            <span class="text-xs font-medium text-slate-400">Yayasan Ponpes Miftahussalam</span>
                         </div>
-                        <h4 class="text-xl font-bold text-slate-800 mb-3">Desain Antarmuka Panel Kontrol Bel Digital</h4>
+                        <h4 class="text-xl font-bold text-slate-800 mb-2">Antarmuka Pengguna & UX Sistem Bel Otomatis IoT</h4>
+                        <p class="text-xs font-semibold text-amber-600 mb-3">Magang UI/UX Designer (Apr – Agu 2025)</p>
                         <p class="text-sm text-slate-600 leading-relaxed mb-6">
-                            Perancangan Wireframe, Design System, dan Prototipe Interaktif menggunakan Figma untuk antarmuka pengguna pada sistem bel otomatis berbasis web lokal agar mudah dioperasikan oleh staf sekolah.
+                            Merancang antarmuka pengguna (UI) dan alur pengalaman pengguna (UX) menggunakan Figma untuk sistem bel sekolah otomatis berbasis IoT guna meningkatkan keterbacaan serta kemudahan navigasi sistem lokal bagi staf yayasan melalui penyusunan wireframe dan tata letak konsisten.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="px-2.5 py-1 rounded-md bg-pink-50 text-pink-600 text-xs font-medium">Figma</span>
                             <span class="px-2.5 py-1 rounded-md bg-pink-50 text-pink-600 text-xs font-medium">Wireframing</span>
-                            <span class="px-2.5 py-1 rounded-md bg-pink-50 text-pink-600 text-xs font-medium">User Testing</span>
+                            <span class="px-2.5 py-1 rounded-md bg-pink-50 text-pink-600 text-xs font-medium">Information Architecture</span>
+                            <span class="px-2.5 py-1 rounded-md bg-pink-50 text-pink-600 text-xs font-medium">Prototyping</span>
                         </div>
                     </div>
                 </div>
@@ -367,28 +435,28 @@
             <!-- Event & Volunteer Grid -->
             <div class="mt-12 bg-gradient-to-r from-pink-50 to-yellow-50 p-6 sm:p-8 rounded-2xl border border-pink-100">
                 <h4 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
-                    <i class="fa-solid fa-star text-amber-500"></i> Pengalaman Kepanitiaan & Volunteer Event
+                    <i class="fa-solid fa-star text-amber-500"></i> Organizational & Event Experience
                 </h4>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
                     <div class="bg-white p-4 rounded-xl shadow-sm border border-pink-100">
                         <p class="font-bold text-slate-800">LO Buyer</p>
                         <p class="text-xs text-pink-600 font-semibold mb-1">JIFFINA #9</p>
-                        <p class="text-xs text-slate-500">Mengoordinasikan kebutuhan buyer ekspor & alur informasi transaksi.</p>
+                        <p class="text-xs text-slate-500">Mengelola komunikasi dengan buyer ekspor untuk memastikan kelancaran alur operasional.</p>
                     </div>
                     <div class="bg-white p-4 rounded-xl shadow-sm border border-pink-100">
                         <p class="font-bold text-slate-800">LO Artist</p>
                         <p class="text-xs text-pink-600 font-semibold mb-1">HadirFest #1</p>
-                        <p class="text-xs text-slate-500">Mengatur penyelarasan jadwal & kebutuhan performer di lokasi acara.</p>
+                        <p class="text-xs text-slate-500">Penyelarasan kebutuhan artis di lokasi acara untuk memastikan kelancaran alur operasional.</p>
                     </div>
                     <div class="bg-white p-4 rounded-xl shadow-sm border border-pink-100">
-                        <p class="font-bold text-slate-800">Floor Area Volunteer</p>
-                        <p class="text-xs text-amber-600 font-semibold mb-1">Prambanan Jazz #10 & #11</p>
-                        <p class="text-xs text-slate-500">Mengatur operasional mobilitas & alur penonton konser skala nasional.</p>
+                        <p class="font-bold text-slate-800">Event Volunteer</p>
+                        <p class="text-xs text-amber-600 font-semibold mb-1">Prambanan Jazz Festival</p>
+                        <p class="text-xs text-slate-500">Mengatur alur mobilitas ribuan penonton dan operasional floor area acara festival.</p>
                     </div>
                     <div class="bg-white p-4 rounded-xl shadow-sm border border-pink-100">
-                        <p class="font-bold text-slate-800">Volunteer</p>
-                        <p class="text-xs text-amber-600 font-semibold mb-1">Kongres PII Nasional</p>
-                        <p class="text-xs text-slate-500">Mendukung koordinasi registrasi dan akomodasi peserta kongres insinyur.</p>
+                        <p class="font-bold text-slate-800">Event Volunteer</p>
+                        <p class="text-xs text-amber-600 font-semibold mb-1">Kongres PII</p>
+                        <p class="text-xs text-slate-500">Koordinasi registrasi dan akomodasi peserta kongres insinyur tingkat nasional.</p>
                     </div>
                 </div>
             </div>
@@ -414,13 +482,14 @@
                         Technical Skills
                     </h4>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-2 rounded-xl bg-pink-50 text-pink-700 font-medium text-sm border border-pink-100">UI/UX Design (Figma)</span>
-                        <span class="px-3 py-2 rounded-xl bg-pink-50 text-pink-700 font-medium text-sm border border-pink-100">IoT & ESP32</span>
-                        <span class="px-3 py-2 rounded-xl bg-pink-50 text-pink-700 font-medium text-sm border border-pink-100">Node.js</span>
+                        <span class="px-3 py-2 rounded-xl bg-pink-50 text-pink-700 font-medium text-sm border border-pink-100">IoT Hardware Development (ESP32)</span>
+                        <span class="px-3 py-2 rounded-xl bg-pink-50 text-pink-700 font-medium text-sm border border-pink-100">Web Development (Node.js, Local Web Server)</span>
                         <span class="px-3 py-2 rounded-xl bg-pink-50 text-pink-700 font-medium text-sm border border-pink-100">SQLite</span>
-                        <span class="px-3 py-2 rounded-xl bg-pink-50 text-pink-700 font-medium text-sm border border-pink-100">Web Lokal Architecture</span>
-                        <span class="px-3 py-2 rounded-xl bg-pink-50 text-pink-700 font-medium text-sm border border-pink-100">Administrasi & Penjaminan Mutu Data</span>
-                        <span class="px-3 py-2 rounded-xl bg-pink-50 text-pink-700 font-medium text-sm border border-pink-100">Content Editing & Video Production</span>
+                        <span class="px-3 py-2 rounded-xl bg-pink-50 text-pink-700 font-medium text-sm border border-pink-100">UI/UX Design (Figma)</span>
+                        <span class="px-3 py-2 rounded-xl bg-pink-50 text-pink-700 font-medium text-sm border border-pink-100">Academic Research</span>
+                        <span class="px-3 py-2 rounded-xl bg-pink-50 text-pink-700 font-medium text-sm border border-pink-100">Wireframing & Prototyping</span>
+                        <span class="px-3 py-2 rounded-xl bg-pink-50 text-pink-700 font-medium text-sm border border-pink-100">System Administration</span>
+                        <span class="px-3 py-2 rounded-xl bg-pink-50 text-pink-700 font-medium text-sm border border-pink-100">Data & Document Management</span>
                     </div>
                 </div>
 
@@ -430,16 +499,17 @@
                         <div class="w-8 h-8 rounded-lg bg-yellow-100 flex items-center justify-center text-amber-700">
                             <i class="fa-solid fa-users"></i>
                         </div>
-                        Soft Skills & Profesional
+                        Professional Soft Skills
                     </h4>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-2 rounded-xl bg-yellow-50 text-amber-800 font-medium text-sm border border-yellow-200">Manajemen Proyek</span>
-                        <span class="px-3 py-2 rounded-xl bg-yellow-50 text-amber-800 font-medium text-sm border border-yellow-200">Koordinasi Event & LO</span>
-                        <span class="px-3 py-2 rounded-xl bg-yellow-50 text-amber-800 font-medium text-sm border border-yellow-200">Komunikasi Strategis</span>
+                        <span class="px-3 py-2 rounded-xl bg-yellow-50 text-amber-800 font-medium text-sm border border-yellow-200">Project Coordination</span>
+                        <span class="px-3 py-2 rounded-xl bg-yellow-50 text-amber-800 font-medium text-sm border border-yellow-200">Hardware-Software Integration</span>
+                        <span class="px-3 py-2 rounded-xl bg-yellow-50 text-amber-800 font-medium text-sm border border-yellow-200">Event Coordination</span>
                         <span class="px-3 py-2 rounded-xl bg-yellow-50 text-amber-800 font-medium text-sm border border-yellow-200">Problem Solving</span>
-                        <span class="px-3 py-2 rounded-xl bg-yellow-50 text-amber-800 font-medium text-sm border border-yellow-200">Kerja Sama Tim</span>
-                        <span class="px-3 py-2 rounded-xl bg-yellow-50 text-amber-800 font-medium text-sm border border-yellow-200">Perencanaan Operasional</span>
-                        <span class="px-3 py-2 rounded-xl bg-yellow-50 text-amber-800 font-medium text-sm border border-yellow-200">Komunikasi Inklusif</span>
+                        <span class="px-3 py-2 rounded-xl bg-yellow-50 text-amber-800 font-medium text-sm border border-yellow-200">Marketing Communications</span>
+                        <span class="px-3 py-2 rounded-xl bg-yellow-50 text-amber-800 font-medium text-sm border border-yellow-200">Strategic Communication</span>
+                        <span class="px-3 py-2 rounded-xl bg-yellow-50 text-amber-800 font-medium text-sm border border-yellow-200">Teamwork & Collaboration</span>
+                        <span class="px-3 py-2 rounded-xl bg-yellow-50 text-amber-800 font-medium text-sm border border-yellow-200">Time Management</span>
                     </div>
                 </div>
             </div>
