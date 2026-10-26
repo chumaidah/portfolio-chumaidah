@@ -50,6 +50,30 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        /* ── Hero Slideshow CSS Animation ── */
+        @keyframes slide-fade-1 {
+            0%, 45%  { opacity: 1; transform: scale(1.04); }
+            50%, 95% { opacity: 0; transform: scale(1);    }
+            100%     { opacity: 1; transform: scale(1.04); }
+        }
+        @keyframes slide-fade-2 {
+            0%, 45%  { opacity: 0; transform: scale(1);    }
+            50%, 95% { opacity: 1; transform: scale(1.04); }
+            100%     { opacity: 0; transform: scale(1);    }
+        }
+        .hero-slide-1 {
+            animation: slide-fade-1 10s ease-in-out infinite;
+            will-change: opacity, transform;
+        }
+        .hero-slide-2 {
+            animation: slide-fade-2 10s ease-in-out infinite;
+            will-change: opacity, transform;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .hero-slide-1 { animation: none; opacity: 1;  transform: none; }
+            .hero-slide-2 { animation: none; opacity: 0;  transform: none; }
+        }
+        /* ────────────────────────────────── */
         .glass-nav {
             background: rgba(255, 253, 249, 0.85);
             backdrop-filter: blur(12px);
@@ -139,8 +163,8 @@
                     <div class="relative">
                         <div class="absolute -inset-4 rounded-3xl gradient-pink-yellow blur-xl opacity-70 animate-pulse"></div>
                         <div class="relative w-64 h-80 sm:w-72 sm:h-96 rounded-2xl overflow-hidden border-4 border-white shadow-2xl" id="hero-slideshow">
-                            <img src="foto-kasual-1.jpg" alt="Chumaidah Wisuda 1" class="hero-slide absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-1000" style="opacity:1;">
-                            <img src="foto-kasual-2.jpg" alt="Chumaidah Wisuda 2" class="hero-slide absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-1000" style="opacity:0;">
+                            <img src="foto-kasual-1.jpg" alt="Chumaidah Wisuda 1" class="hero-slide-1 absolute inset-0 w-full h-full object-cover object-top">
+                            <img src="foto-kasual-2.jpg" alt="Chumaidah Wisuda 2" class="hero-slide-2 absolute inset-0 w-full h-full object-cover object-top">
                         </div>
                         
                         <!-- Floating Badges -->
@@ -463,19 +487,6 @@
         });
     </script>
 
-    <!-- Hero Slideshow Script -->
-    <script>
-        (function() {
-            const slides = document.querySelectorAll('.hero-slide');
-            let current = 0;
-            if (slides.length > 1) {
-                setInterval(() => {
-                    slides[current].style.opacity = '0';
-                    current = (current + 1) % slides.length;
-                    slides[current].style.opacity = '1';
-                }, 3500);
-            }
-        })();
-    </script>
+
 </body>
 </html>
